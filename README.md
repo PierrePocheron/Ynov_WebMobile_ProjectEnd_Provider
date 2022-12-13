@@ -18,9 +18,21 @@ yarn dev
 - Setup environnement variables for Netflify
 - Form authentication
 - Form register
+- Setup rooter
 
 Todo :
-- Setup rooter
+- Get list of appointements
+- Display in an agenda
+
+
+- Add map with the client's address
+- Add itinéraire (bonus)
+- Add créneaux
+- Chose type of prestation
+- Vibrate on error
+- Notification PUSH (bonus)
+
+
 
 ## 🏛️ `Technology used`
 - Web App

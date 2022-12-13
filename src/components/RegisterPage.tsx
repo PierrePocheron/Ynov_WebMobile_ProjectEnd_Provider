@@ -15,7 +15,7 @@ const RegisterPage = () => {
 
   const handleClickRegister = async () => {
     const userCreate = await createUserWithEmailAndPassword(auth, email, password)
-      .catch(function(error) {
+      .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
 
@@ -33,7 +33,7 @@ const RegisterPage = () => {
         type: "PROVIDER",
         professionalIdentifier: professionalIdentifier
       })
-      .catch(function(error) {
+      .catch((error) => {
         var errorMessage = error.message;
         alert(errorMessage)
         console.log(error);

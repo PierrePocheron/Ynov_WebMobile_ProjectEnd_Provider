@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import LoginPage from './components/LoginPage';
-import DashboardProviderPage from './components/DashboardProviderPage';
+import MyAppointmentPage from './components/MyAppointmentPage';
 import {
   BrowserRouter as Router,
   Routes,
@@ -18,10 +18,11 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
+          <Route path="" element={<LoginPage updateLogin={setIsLogin} />} />
           <Route path="/" element={<LoginPage updateLogin={setIsLogin} />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage updateLogin={setIsLogin} />} />
-          <Route path="/dashboard" element={<DashboardProviderPage />} />
+          <Route path="/my-appointment" element={<MyAppointmentPage />} />
         </Routes>
       </Router>
     </div>
