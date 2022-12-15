@@ -24,7 +24,6 @@ Todo :
 - Get list of appointements
 - Display in an agenda
 
-- Add icons
 - Add map with the client's address
 - Add itinéraire (bonus)
 - Add créneaux
@@ -35,7 +34,7 @@ Todo :
 
 
 ## 🏛️ `Technology used`
-- Web App
+- Web app
 - PWA
 - Vite
 - React
