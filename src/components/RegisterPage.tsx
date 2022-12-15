@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { collection, addDoc } from 'firebase/firestore';
-import { useReducer, useState } from 'react';
+import { useState } from 'react';
 import { auth, db } from '../main';
 import { useNavigate } from "react-router-dom";
 
@@ -10,6 +10,8 @@ const RegisterPage = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [professionalIdentifier, setProfessionalIdentifier] = useState<string>("");
+  const [firstname, setFirstname] = useState<string>("");
+  const [lastname, setLastname] = useState<string>("");
   const navigate = useNavigate();
 
 
@@ -53,6 +55,14 @@ const RegisterPage = () => {
     setPassword(event.currentTarget.value)
   }
 
+  const handleChangeFirstname = (event: any) => {
+    setFirstname(event.currentTarget.value)
+  }
+
+  const handleChangeLastname = (event: any) => {
+    setLastname(event.currentTarget.value)
+  }
+
   const handleChangeProfessionalIdentifier = (event: any) => {
     setProfessionalIdentifier(event.currentTarget.value)
   }
@@ -94,6 +104,30 @@ const RegisterPage = () => {
               value={password}
               onChange={handleChangePassword}
               placeholder="Password">
+              </input>
+            </div>
+
+            <div className="input-control">
+              <label htmlFor="firstname" hidden>Firstname</label>
+              <input type="firstname"
+              id="firstname"
+              name="firstname"
+              className="input-field"
+              value={firstname}
+              onChange={handleChangeFirstname}
+              placeholder="Firstname">
+              </input>
+            </div>
+
+            <div className="input-control">
+              <label htmlFor="lastname" hidden>Lastname</label>
+              <input type="lastname"
+              id="lastname"
+              name="lastname"
+              className="input-field"
+              value={lastname}
+              onChange={handleChangeLastname}
+              placeholder="Lastname">
               </input>
             </div>
 
