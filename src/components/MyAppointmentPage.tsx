@@ -43,14 +43,10 @@ const MyAppointmentPage = () => {
           })
         })
       )
-
-      console.log(listAppointmentsTemp)
       setListAppointment(listAppointmentsTemp)
     }
-
     fetchData();
   }, [])
-
 
 
   const handleClickChooseTimeAppointment = async (event:any, appointmentId:string) => {
@@ -68,19 +64,15 @@ const MyAppointmentPage = () => {
     .catch(error => {
         console.log(error);
     })
-
-    // Update state of appointments
-    //const newAppointments = listAppointment?.filter((appointment) => appointment.id !== appointmentId);
-    //setListAppointment(newAppointments);
   }
 
 
   const handleChangeTime = (event: any) => {
     setAppointmentTime(event.currentTarget.value)
   }
-  console.log(listAppointment?.length)
-  return (
 
+
+  return (
   <main className="main">
     <div className=''>
       <section className="wrapper">
