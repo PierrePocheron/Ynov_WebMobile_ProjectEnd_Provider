@@ -1,7 +1,7 @@
 # 🚀 ProjectEnd Provider
 
 ## 🏗️ `Getting started`
-Start Hack Contact application with autoReload enabled.
+Start application with autoReload enabled.
 ```
 npm run dev
 # or
@@ -19,17 +19,23 @@ yarn dev
 - Form authentication
 - Form register
 - Setup rooter
+- Get list of appointements
+- Button to install PWA
+
+
+Bonus :
+- On install event
+- Splash screen
+- Utiliser le storage local des rendez-vous + médecins (pour faire du offline)
+- Notification PUSH
 
 Todo :
-- Get list of appointements
 - Display in an agenda
-
-- Add map with the client's address
+- Display in [map](https://docs.mapbox.com/mapbox-gl-js/guides/install/) with the client's address
 - Add itinéraire (bonus)
 - Add créneaux
 - Chose type of prestation
 - Vibrate on error
-- Notification PUSH (bonus)
 
 
 
