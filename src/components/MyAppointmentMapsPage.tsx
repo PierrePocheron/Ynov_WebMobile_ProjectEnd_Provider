@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { auth, db } from '../main';
 
 
-const MyAppointmentPage = () => {
+const MyAppointmentMapsPage = () => {
 
   const navigate = useNavigate();
   const currentProvider = auth.currentUser
@@ -66,66 +66,28 @@ const MyAppointmentPage = () => {
     })
   }
 
-
   const handleChangeTime = (event: any) => {
     setAppointmentTime(event.currentTarget.value)
   }
 
-  const handleClickButtonMyAppointmentMaps = (event: any) => {
-    navigate("/my-appointment-maps");
+  const handleClickButtonMyAppointment = (event: any) => {
+    navigate("/my-appointment");
   }
+
 
   return (
   <main className="main">
-    <div className=''>
-      <section className="wrapper">
-        <div className="form">
-          <h1 className="text text-large">My appointment 🚗</h1>
-        </div>
-      </section>
-    </div>
-
-    <button className="input-submit" onClick={(event:any) => setAppointmentTime('12')}>Refresh</button>
-    <button className="input-warning" onClick={handleClickButtonMyAppointmentMaps}>See maps</button>
+    <section className="wrapper">
+      <div className="form">
+        <h1 className="text text-large">My appointment Maps🚗</h1>
+      </div>
+    </section>
 
     <section className="grid-container">
-      <p><i>Confirm time for appointments :</i></p>
-      {listAppointment?.map(appointment =>
-        <div className="wrapper">
-          <div className="form">
-          <h5 className=""><i>Appointment informations</i></h5>
-          <span className="text-left">
-            Date : <b><i>{appointment.data.date}</i></b>
-            <br/>
-            <br/>
-            Patient 😷 : {appointment.patient.lastname} {appointment.patient.firstname}
-            <br/>
-            Address : {appointment.patient.address}
-            <br/><br/>
-          </span>
-
-          {/* Choose time */}
-          <div className="input-control">
-            <label htmlFor="appointmentTime" hidden>Appointment Time</label>
-            <input
-            type="time"
-            id="appointmentTime"
-            name="appointmentTime"
-            className="input-field"
-            style={{width:'auto'}}
-            onChange={handleChangeTime}>
-            </input>
-          </div>
-          <button className="input-submit" onClick={(event:any) => handleClickChooseTimeAppointment(event, appointment.id)}>
-              Choose time
-          </button>
-
-        </div>
-      </div>
-      )}
+      <button className="input-warning" onClick={handleClickButtonMyAppointment}>See appointments</button>
     </section>
   </main>
   )
 
 }
-export default MyAppointmentPage;
+export default MyAppointmentMapsPage;

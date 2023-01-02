@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import MyAppointmentPage from './components/MyAppointmentPage';
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
 import LoginPage from './components/LoginPage';
+import MyAppointmentPage from './components/MyAppointmentPage';
+import MyAppointmentMapsPage from './components/MyAppointmentMapsPage';
 import RegisterPage from './components/RegisterPage';
 import Footer from './components/FooterLayout';
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage updateLogin={setIsLogin} />} />
           <Route path="/my-appointment" element={<MyAppointmentPage />} />
+          <Route path="/my-appointment-maps" element={<MyAppointmentMapsPage />} />
         </Routes>
       </Router>
       <Footer></Footer>
