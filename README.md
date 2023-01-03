@@ -41,7 +41,6 @@ Todo :
 - Vibrate on error
 
 
-
 ## 🏛️ `Technology used`
 - Web app
 - PWA
