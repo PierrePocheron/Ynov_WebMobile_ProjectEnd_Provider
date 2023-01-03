@@ -57,9 +57,9 @@ const MyAppointmentMapsPage = () => {
 
     <Map
       initialViewState={{
-          longitude: -122.4,
-          latitude: 37.8,
-          zoom: 14
+        latitude: 45.75,
+        longitude: 4.85,
+        zoom: 11
       }}
       mapboxAccessToken={apiKey}
       style={{width: '100vw', height: '100vh'}}
