@@ -21,7 +21,8 @@ yarn dev
 - Setup rooter
 - Get list of appointements
 - Button to install PWA
-- Splash Screen Android
+- Splash Screen
+- Display map
 
 
 Bonus :
