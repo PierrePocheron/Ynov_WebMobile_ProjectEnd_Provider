@@ -21,17 +21,20 @@ yarn dev
 - Setup rooter
 - Get list of appointements
 - Button to install PWA
+- Splash Screen
+- Display map
 
 
 Bonus :
 - On install event
-- Splash screen
 - Utiliser le storage local des rendez-vous + médecins (pour faire du offline)
 - Notification PUSH
+
 
 Todo :
 - Display in an agenda
 - Display in [map](https://docs.mapbox.com/mapbox-gl-js/guides/install/) with the client's address
+- Display address of provider on now location
 - Add itinéraire (bonus)
 - Add créneaux
 - Chose type of prestation
