@@ -4,7 +4,7 @@
 
 This project aims to validate our WebMobile option at Ynov. 
 This web application is a "doctolibe like" that will be used by health care providers.
-The features are as follows: [features](#🧱-features)
+The features are as follows: [features](#-features)
 
 ## 🏗️ `Getting started`
 Start application with auto reload enabled.
